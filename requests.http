@@ -9,7 +9,7 @@ Content-Type: application/json
 
 {
   "username": "admin",
-  "password": "1234"
+  "password": "123"
 }
 
 ### Invalid Login
