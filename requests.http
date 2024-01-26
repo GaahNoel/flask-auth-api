@@ -1,0 +1,51 @@
+@url = http://127.0.0.1:5000
+
+### HealthCheck
+GET {{url}}/healthcheck
+
+### Login
+POST {{url}}/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "1234"
+}
+
+### Invalid Login
+POST {{url}}/login
+Content-Type: application/json
+
+{
+  "username": "any",
+  "password": "1234"
+}
+
+### Logout
+GET {{url}}/logout
+Content-Type: application/json
+
+### Create User
+POST {{url}}/user
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "123"
+}
+
+### Get User By Id
+GET {{url}}/user/bf5e7006-5d1e-4727-b190-0f1c91a1f04a
+Content-Type: application/json
+
+### Update User
+PATCH {{url}}/user/bf5e7006-5d1e-4727-b190-0f1c91a1f04a
+Content-Type: application/json
+
+{
+  "password": "1234"
+}
+
+### Delete User
+DELETE {{url}}/user/bf5e7006-5d1e-4727-b190-0f1c91a1f04a
+Content-Type: application/json
