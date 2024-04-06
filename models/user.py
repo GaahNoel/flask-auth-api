@@ -1,4 +1,4 @@
-from database import db
+from repositories.connection import db
 from uuid import uuid4
 from flask_login import UserMixin
 
